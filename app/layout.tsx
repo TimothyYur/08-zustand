@@ -15,6 +15,19 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: 'Zustand Notes App',
   description: 'A notes management app built with Next.js, Zustand, and TanStack.',
+  openGraph: {
+    title: 'Zustand Notes App',
+    description: 'A notes management app built with Next.js, Zustand, and TanStack.',
+    url: 'https://your-domain.example',
+    images: [
+      {
+        url: 'https://your-domain.example/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Zustand Notes App',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
