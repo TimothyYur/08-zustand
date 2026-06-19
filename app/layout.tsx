@@ -18,10 +18,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Zustand Notes App',
     description: 'A notes management app built with Next.js, Zustand, and TanStack.',
-    url: 'https://your-domain.example',
+    url: 'https://08-zustand-wine-zeta.vercel.app/',
     images: [
       {
-        url: 'https://your-domain.example/og-image.png',
+        url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
         width: 1200,
         height: 630,
         alt: 'Zustand Notes App',
