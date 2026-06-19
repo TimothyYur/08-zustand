@@ -1,7 +1,21 @@
+import type { Metadata } from 'next';
+import { Roboto } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import TanStackProvider from '@/components/TanStackProvider/TanStackProvider';
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-roboto',
+  display: 'swap',
+});
+
+export const metadata: Metadata = {
+  title: 'Zustand Notes App',
+  description: 'A notes management app built with Next.js, Zustand, and TanStack.',
+};
 
 export default function RootLayout({
   children,
@@ -12,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={roboto.className}>
         <TanStackProvider>
           <Header />
           {children}
